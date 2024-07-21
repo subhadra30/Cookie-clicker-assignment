@@ -1,0 +1,62 @@
+body {
+  background-color: rgba(35, 35, 36, 0.863);
+  color: tomato;
+  font-family: Cambria;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+
+.caption {
+  color: rgb(227, 16, 115);
+  animation-name: slideInLeft;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.image-container > button {
+  margin-left: 10px;
+}
+
+.cookie-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+img {
+  width: 100px;
+}
+
+button {
+  color: rgb(31, 172, 203);
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+#textdisplay {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
